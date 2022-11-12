@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+
+*, *::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  height: 100vh;
+  text-align: center;
+  /* background-color: #283149; */
+  background: rgb(61,13,93);
+  background: linear-gradient(90deg, rgba(61,13,93,1) 0%, rgba(89,9,9,1) 38%, rgba(40,14,88,1) 100%);
+}
+
+h1 {
+  margin-top: 1.3rem;
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: 'Lobster Two', cursive;
+  font-weight: 700;
+  text-shadow: 3px 0 #2c097e;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+footer p{
+  font-size: 1.3rem;
+  padding: .9rem 0;
+}
+
+.w {
+  background-image: url("images/tom1.png");
+}
+
+.a {
+  background-image: url("images/tom2.png");
+}
+
+.s {
+  background-image: url("images/tom3.png");
+}
+
+.d {
+  background-image: url("images/tom4.png");
+}
+
+.j {
+  background-image: url("images/snare.png");
+}
+
+.k {
+  background-image: url("images/crash.png");
+}
+
+.l {
+  background-image: url("images/kick.png");
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Alfa Slab One', cursive;
+  line-height: 2;
+  font-weight: 400;
+  color: #04024b;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size: 4rem;
+  }
+  .drum{
+    font-size: 4rem;
+    width: 120px;
+    height: 120px;
+    border-width: 7px;
+    border-radius: 12px;
+  }
+  .set{
+    display: grid;
+    align-content: space-between;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    padding: 8px;
+  }
+}
